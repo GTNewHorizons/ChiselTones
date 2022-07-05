@@ -1,16 +1,19 @@
 package tehnut.chiseltones;
 
+import static com.riciJak.Ztones.init.ModBlocks.*;
+
 import com.cricketcraft.chisel.api.carving.CarvingUtils;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import java.io.File;
 import net.minecraft.block.Block;
 
-import java.io.File;
-
-import static com.riciJak.Ztones.init.ModBlocks.*;
-
-@Mod(modid = ModInformation.ID, name = ModInformation.NAME, version = ModInformation.VERSION, dependencies = ModInformation.DEPEND)
+@Mod(
+        modid = ModInformation.ID,
+        name = ModInformation.NAME,
+        version = ModInformation.VERSION,
+        dependencies = ModInformation.DEPEND)
 public class ChiselTones {
 
     @Mod.Instance
@@ -110,8 +113,7 @@ public class ChiselTones {
      */
     private static void addVariationFast(String groupName, Block block, int maxMeta, boolean config) {
         if (config)
-            for (int meta = 0; meta <= maxMeta; meta++)
-                CarvingUtils.chisel.addVariation(groupName, block, meta, meta);
+            for (int meta = 0; meta <= maxMeta; meta++) CarvingUtils.chisel.addVariation(groupName, block, meta, meta);
     }
 
     /**
@@ -122,7 +124,6 @@ public class ChiselTones {
      * @param config - Does the config allow
      */
     private static void addVariationWithoutMeta(String groupName, Block block, int order, boolean config) {
-        if (config)
-            CarvingUtils.chisel.addVariation(groupName, block, 0, order);
+        if (config) CarvingUtils.chisel.addVariation(groupName, block, 0, order);
     }
 }
