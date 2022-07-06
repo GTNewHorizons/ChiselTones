@@ -1,16 +1,21 @@
-[
 {
-  "modid": "chiseltones",
-  "name": "Chisel Tones",
-  "description": "Chisel compatibility for Ztones",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "http://tehnut.info/",
-  "updateUrl": "http://tehnut.info/jenkins/",
-  "authorList": [ "TehNut" ],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Chisel compatibility for Ztones",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://www.curseforge.com/minecraft/mc-mods/chiseltones",
+		"updateUrl": "",
+		"authorList": ["TehNut"],
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
 }
-]
