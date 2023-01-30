@@ -2,12 +2,15 @@ package tehnut.chiseltones;
 
 import static com.riciJak.Ztones.init.ModBlocks.*;
 
+import java.io.File;
+
+import net.minecraft.block.Block;
+
 import com.cricketcraft.chisel.api.carving.CarvingUtils;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import java.io.File;
-import net.minecraft.block.Block;
 
 @Mod(
         modid = ModInformation.ID,
@@ -107,9 +110,9 @@ public class ChiselTones {
     /**
      *
      * @param groupName - Name of Chisel group to add to
-     * @param block - Block to add
-     * @param maxMeta - Highest meta of the block
-     * @param config - Does the config allow
+     * @param block     - Block to add
+     * @param maxMeta   - Highest meta of the block
+     * @param config    - Does the config allow
      */
     private static void addVariationFast(String groupName, Block block, int maxMeta, boolean config) {
         if (config)
@@ -119,9 +122,9 @@ public class ChiselTones {
     /**
      *
      * @param groupName - Name of Chisel group to add to
-     * @param block - Block to add
-     * @param order - What position to put the block at
-     * @param config - Does the config allow
+     * @param block     - Block to add
+     * @param order     - What position to put the block at
+     * @param config    - Does the config allow
      */
     private static void addVariationWithoutMeta(String groupName, Block block, int order, boolean config) {
         if (config) CarvingUtils.chisel.addVariation(groupName, block, 0, order);
