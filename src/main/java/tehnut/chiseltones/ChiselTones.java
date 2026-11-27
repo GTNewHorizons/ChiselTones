@@ -104,6 +104,7 @@ public class ChiselTones {
             addVariationFast("Zane", zaneBlock, 15, enableZane);
             addVariationFast("Zyth", zythBlock, 15, enableZyth);
             addVariationFast("Ztyl", ztylBlock, 15, true);
+            addVariationFast("Glaxx", glaxx, 15, enableGlaxx);
         }
     }
 
